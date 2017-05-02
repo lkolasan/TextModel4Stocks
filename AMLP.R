@@ -28,8 +28,7 @@ cndjia$all <- gsub("([<>])|[[:punct:]]", "\\1", cndjia$all)
 # Keeping the required columns and deleting rest 
 cndjia <- cndjia[, c('Date', 'Label', 'all')]
 
-# Necessary to set this option on Linux machines, otherwise the NGrameTokenizer will cause our 
-# DocumentTermMatrix call to hang. 
+# set this option on Linux machines or DocumentTermMatrix call may cause hang. 
 options(mc.cores=1)
 
 BigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 2, max = 2))
