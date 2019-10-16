@@ -6,4 +6,5 @@ Scope: To predict whether Stock market fall or rise on a given day using headlin
 
 Data: Combined_News_DJIA.csv -> The first column is "Date", the second is "Label", and the other ones are news headlines ranging from "Top1" to "Top25".
 
-Ref:https://www.kaggle.com/aaron7sun/stocknews
+Ref:
+Sun, J. (2016, August). Daily News for Stock Market Prediction, Version 1. Retrieved May 2, 2017 from https://www.kaggle.com/aaron7sun/stocknews.
